@@ -10,6 +10,23 @@
     color: #1C7EF7;
 }
 
+p {
+  font-size: 16px;
+  word-break: break-word;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.container {
+    background: linear-gradient(
+    90deg,
+    #1C7EF7 0%,
+    #1CAEF5 50%,
+    #21D3F5 100%);
+}
+
 /* NavBar */
 
 .navbar {
@@ -92,7 +109,7 @@
     margin-bottom: 32px;
 }
 
-.input-wrapper {
+.input-wrapper, .input-wrapper-gamepage {
     width: 100%;
     position: relative;
     display: flex;
@@ -100,7 +117,12 @@
     margin-bottom: 48px;
 }
 
-.input {
+.input-wrapper-gamepage {
+    margin-top: 32px;
+    
+}
+
+.input, .input-gamepage {
     background-color: #fff;
     border-radius: 20px;
     border: 1px solid #0a1f44;
@@ -115,6 +137,10 @@
     font-size: 24px;
     padding-left: 25px;
     box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.85);
+}
+
+.input-gamepage {
+    border: 2px solid #1C7EF7;
 }
 
 button {
@@ -145,10 +171,105 @@ button:hover {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-bottom: 36px;
 }
 
 .gaming-img {
     max-width: max-content;
     height: 50vh;
     position: absolute;
+}
+
+.game-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.game {
+    width: 50%;
+}
+
+.game-card {
+    background-color: #21D3F5;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 1.2);
+    margin: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.game-card:hover {
+    transform: scale(1.07);
+    transition: all 450ms ease;
+}
+
+.game-card__container {
+    width: 80%;  
+    max-width: 400px;
+    padding: 2px 16px;
+    margin: 12px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(
+    90deg,
+    #1C7EF7 0%,
+    #1CAEF5 50%,
+    #21D3F5 100%);
+     padding-top: 64px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+/* Games Page */
+
+.link-gamepage {
+    font-size: 32px;
+}
+
+#landing-games {
+    background: linear-gradient(
+    90deg,
+    #1C7EF7 0%,
+    #1CAEF5 50%,
+    #21D3F5 100%);
+}
+
+.search__sort {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.sort {
+    padding: 48px;
+}
+
+select {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #1C7EF7;
+    color: #606266;
+    height: 50px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 130%;
+    max-width: 200px;
 }
