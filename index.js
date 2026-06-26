@@ -52,6 +52,7 @@ function gamesHTML(game) {
     return `<div class="game-card" onclick="gameData(${game.id})">
             <div class="game-card__container">
               <h3>${game.title}</h4>
+                <img src="${game.thumbnail}"
                 <p><b>Platform:</b>${game.platform}</p>
                 <p><b>Genre:</b> ${game.genre}</p>
                 <p><b>FreetoGame Profile URL:</b> <a href="https://${game.freetogame_profile_url}" target="_blank">${game.freetogame_profile_url}</a></p>
