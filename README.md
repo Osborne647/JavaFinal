@@ -1,2 +1,2 @@
-Final Javascript final.
+Final Javascript project.
 Using a free to play games API
