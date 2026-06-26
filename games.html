@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Games</title>
+    <script
+      src="https://kit.fontawesome.com/662da0114d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav content-wrapper">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="playfree logo" class="logo" />
+        </div>
+        <div class="links-gamepage">
+          <a href="./index.html" class="link link__hover-effect link-gamepage">Home</a>
+        </div>
+      </div>
+    </header>
+    <section id="landing-games">
+        <div class="search__sort">
+            <div class="input-wrapper-gamepage">
+            <input class= "input-gamepage" type="text" placeholder="Search by genre or platform" oninput="handleSearch(this.value)">
+            <button class="search" oninput="handleSearch(this.value)"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="sort">
+        <select id="filter" onchange="handleSort(this.value)">
+            <option value="" disabled selected>Sort</option>
+            <option value="A_TO_Z">Alphabetical A-Z</option>
+            <option value="Z_TO_A">Alphabetical Z-A</option>
+          </select>
+          </div>
+        </div>
+     <div class="container">
+        <div class="row">
+            <div class="game-list">
+                <div class="game">
+                    <div class="game-card">
+                        <div class="game-card__container">
+                            <h3>Title</h3>
+                            <p><b>Publisher:</b> Publisher</p>
+                            <p><b>Genre:</b> Genre</p>
+                            <p><b>URL:</b> freetogame_profile_url</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="playfree logo" class="logo" />
+      </div>
+      <div class="row">
+        <div class="footer-links">
+          <a href="#" class="link link__hover-effect">Home</a>
+          <a href="" class="link link__hover-effect">Search</a>
+        </div>
+        <div class="copyright">PLAYFREE © 2026 | Created by Nick Osborne</div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js" unsafe-eval></script>
+</html>
